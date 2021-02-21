@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login Page</title>
+<!-- <link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+	crossorigin="anonymous"> -->
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<nav class="navbar">
+		<h1 class="navbar-brand">Employee Web
+			Application</h1>
+	</nav>
+	<div class="login-block">
+		<form action="LoginServlet" method="post">
+			<div class="form-group">
+				<label for="loginid" class="text-uppercase">Login ID:</label>
+				<input type="text" name="loginid" placeholder="loginid..."
+					class="form-control">
+			</div>
+			<div class="form-group">
+				<label for="password" class="text-uppercase">Password:</label>
+				<input type="password" name="password" placeholder="password..."
+					class="form-control">
+			</div><br>
+
+			<input class="btn btn-primary" type="submit" value="Login">
+			<a type="button" class="btn btn-info" href="Register.html" style="float:right;">Sign Up</a>
+		</form>
+	</div>
+	<br>
+	<!-- <script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+		crossorigin="anonymous"></script> -->
+		<script src="js/bootstrap.js"></script>
+</body>
+</html>

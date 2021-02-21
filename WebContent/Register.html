@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Register Page</title>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<nav class="navbar">
+		<h1 class="navbar-brand">Employee Web Application</h1>
+	</nav>
+	<h1 id="title">Employee Registration Page</h1>
+	<div class="update-block">
+		<form action="RegisterServlet" method="post">
+
+			<div class="form-group">
+				<label for="empId" class="text-uppercase">Enter Employee ID:</label>
+				<input type="text" name="empId" placeholder="Employee ID..."
+					class="form-control">
+			</div>
+
+			<div class="form-group">
+				<label for="empName" class="text-uppercase">Enter Employee
+					Name:</label> <input type="text" name="empName"
+					placeholder="Employee Name:..." class="form-control">
+			</div>
+
+			<div class="form-group">
+				<label for="empSalary" class="text-uppercase">Enter Employee
+					Salary:</label> <input type="text" name="empSalary"
+					placeholder="Employee Salary:..." class="form-control">
+			</div>
+
+			<div class="form-group">
+				<label for="loginid" class="text-uppercase">Enter Login ID:</label>
+				<input type="text" name="loginid" placeholder="Login ID:..."
+					class="form-control">
+			</div>
+
+			<div class="form-group">
+				<label for="password" class="text-uppercase">Enter Password:</label>
+				<input type="password" name="password" placeholder="password..."
+					class="form-control">
+			</div>
+			<br> <input class="btn btn-primary" type="submit"
+				value="Register"> <input type="reset" value="Reset"
+				class="btn btn-info" style="float: right;">
+		</form>
+		<br>
+		<p>
+			Already have an account? <a type="button"
+				class="btn btn-outline-primary" href="Login.html">Login</a>
+		</p>
+	</div>
+
+	<script src="js/bootstrap.js"></script>
+</body>
+</html>
